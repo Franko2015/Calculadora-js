@@ -61,7 +61,6 @@ function evaluation() {
             default:
                 result = "Error";
         }
-        this.totalAnterior.innerHTML = result.toString()
         number1 = [result.toString()];
         number2 = [];
 
