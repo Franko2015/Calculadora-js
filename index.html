@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con JS</title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <script src="./main.js"></script>
+    <div class="container">
+        <div class="calculos">
+            <div id="totales">
+                
+                <div id="totalAnterior"></div>
+                <div class="total" id="total">
+                    0
+                </div>
+            </div>
+        </div>
+        <div class="numeros">
+            <div class="num operador" onclick="deleteAll()" title="Borrar todo">AC</div>
+            <div class="num operador" onclick="operation('( )')" title="Paréntesis">( )</div>
+            <div class="num operador" onclick="operation('%')" title="Porcentaje">%</div>
+            <div class="num operador" onclick="operation('/')" title="Dividir">/</div>
+
+        </div>
+        <div class="numeros">
+            <div class="num" onclick="number(7)">7</div>
+            <div class="num" onclick="number(8)">8</div>
+            <div class="num" onclick="number(9)">9</div>
+            <div class="num operador" onclick="operation('*')" title="Multiplicar">*</div>
+        </div>
+        <div class="numeros">
+            <div class="num" onclick="number(4)">4</div>
+            <div class="num" onclick="number(5)">5</div>
+            <div class="num" onclick="number(6)">6</div>
+            <div class="num operador" onclick="operation('-')" title="Restar">-</div>
+        </div>
+        <div class="numeros">
+            <div class="num" onclick="number(1)">1</div>
+            <div class="num" onclick="number(2)">2</div>
+            <div class="num" onclick="number(3)">3</div>
+            <div class="num operador" onclick="operation('+')" title="Sumar">+</div>
+        </div>
+        <div class="numeros">
+            <div class="num" onclick="number(0)">0</div>
+            <div class="num" onclick="number('.')">.</div>
+            <div class="num operador" onclick="deleteCharacter()" title="Borrar un número">←</div>
+            <div class="num operador" onclick="operation('=')" title="Resultado">=</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

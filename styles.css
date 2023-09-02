@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background: rgb(17,118,213);
+    background: linear-gradient(302deg, rgba(17,118,213,0.21752450980392157) 7%, rgba(13,87,158,1) 68%, rgba(0,0,0,0.7777485994397759) 100%);
+}
+.container {
+    padding: 5% 10% 0% 10%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.calculos{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 10px;
+    margin-inline: 10%;
+}
+.totales{
+    padding-block: 10px;
+}
+.num {
+    cursor: pointer;
+    margin: 1% 2.5%;
+    padding: 3%;
+
+}
+.num:hover {
+    background-color: rgb(168, 208, 243);
+}
+.num:active {
+    background-color: rgb(137, 193, 241);
+}
+.num:focus {
+    background-color: rgb(168, 208, 243);
+}
+.num:disabled {
+    background-color: rgb(168, 208, 243);
+}
+
+.numeros {
+    justify-content: center;
+    display: flex;
+    background-color: aliceblue;
+    margin-inline: 5%;
+    margin-top: 1%;
+    border-radius: 25px;
+}
+.operador{
+    background-color: rgb(168, 208, 243);
+}
+#total,#totalAnterior {
+    color: white;
+}
